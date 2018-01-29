@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".nav-link").click(function(n){var t=n.target,i=t.id,c="/+includes/html/"+i+".html";$.get(c,function(n){$("main").html(n)})})});

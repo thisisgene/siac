@@ -1,0 +1,53 @@
+.section#nav
+
+  .logo-container
+    padding-top: 1rem
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .logo
+      width: 8rem
+      img
+        transition: filter 400ms linear, transform 400ms ease-in-out
+        &:hover
+          filter: invert(100%)
+          transform: rotateZ(-360deg)
+
+  .nav-container
+    width: 60vw
+    margin: 1rem auto 0
+    .nav-list
+      list-style: none
+      padding: 0
+      margin: 0
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      z-index: 1
+
+      li
+        width: 200px
+        .nav-link
+          text-align: center
+          display: block
+          padding: .8rem 1.2rem .2rem
+          transition: all 200ms ease-in-out
+          background: transparent
+          color: #676767
+          text-decoration: none
+          font:
+            size: 1.4rem
+            weight: 300
+          cursor: pointer
+          &:hover
+            background: #ddd
+
+            color: #fff
+        &.active
+          .nav-link
+            background: $background-color
+            color: $secondary-color
+            border: $main-border-width solid $main-border-color
+            border-bottom: none
